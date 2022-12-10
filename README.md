@@ -8,7 +8,8 @@
 <br>The benefit of this new method is that it requires only 2 wires (initially to glitch) to the syscon then 3 to alternative points. Read and write the original chip on the board. No desoldering!
 <br>The target market for this are repairers who will constantly be downgrading or fixing LoadBIOS errors. This will then remove the need to constantly desolder/resolder and buy chips.
 <br>
-
+<br>Preview the paid method's guide <a href="https://betterwayelectronics.com.au/sce_syscon.html">here</a>
+<br>
 <h3>Shopping List</h3>
 <b>Required:</b>
 	<li><a href="https://www.aliexpress.com/item/1005004448662741.html">Arduino Nano v3 ATMEGA168P (OR 328P) w/ CH340 ($6.50AUD)</a>
@@ -49,7 +50,7 @@
 <table>
   <tr>
     <th>FAT</th>
-    <th>PRO</th>
+    <th>SLIM/PRO</th>
   </tr>
   <tr>
     <td>R5F100PLAFB</td>
@@ -81,7 +82,7 @@
   </div>
   <div style="width: 420px; padding: 10px;">
       <img src="https://i.imgur.com/mzsNJHP.png" width="45%" height="45%">
-    <br><b>Pro Syscon</b>
+    <br><b>Slim/Pro Syscon</b>
   </div>
 </div>
 <br>
@@ -141,7 +142,7 @@
 
 <img src="https://i.imgur.com/E6sxlx4.jpeg" width="45%" height="45%">
 <br><br>
-<li>If you are dumping on board, lift pin 15 and 16. To do this add flux and low melt solder to the pins and let it soak in.
+<li>If you are dumping on board, <b>lift pin 15 and 16</b>. To do this add flux and low melt solder to the pins and let it soak in.
 <li>Use tweezers and a thin tip and while applying heat to the pin push from behind with the tweezers until the pin is lifted.
 <li>Wire pin 5 and 6 flat against the resistors, directly to the pins or the alternative solder points. Following best practice.
 <br><br>
@@ -156,7 +157,7 @@
 <li>Apply 480c at 40% pressure from a height of approximately 20cm and slowly drop until you see flux bubble/move and solder shine/glimmer.
 <li>If you do not want to use hot air, use drag soldering technique or manually solder each pin individually with thin tip tinned with low melt solder.
 <br><br>
-<li>When reading Syscon on board (after patching) wire only pin 5, 6 and ground either directly to the chip or alternative points.
+<li>When reading Syscon on board (after patching) <b>wire only pin 5, 6 and ground</b> either directly to the chip or alternative points.
 
 <div style="display: flex;">
   <div style="width: 380px; padding: 10px;">
