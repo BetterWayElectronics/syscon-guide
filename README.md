@@ -10,8 +10,6 @@
 <br>
 
 <h3>Shopping List</h3>
-
-<h3>Shopping List</h3>
 <b>Required:</b>
 	<li><a href="https://www.aliexpress.com/item/1005004448662741.html">Arduino Nano v3 ATMEGA168P (OR 328P) w/ CH340 ($6.50AUD)</a>
 	<li><a href="https://www.aliexpress.com/item/32273550144.html?mp=1">FT232RL TTL Serial Module ($2AUD)</a>
