@@ -76,8 +76,6 @@
 </table>
 <br>
 
-<br><br>
-
 <div style="display: flex;">
   <div style="width: 420px; padding: 10px;">
     <img src="https://i.imgur.com/UnGh1ne.png" width="45%" height="45%">
