@@ -5,7 +5,7 @@
 <br><br>
 <b>Note:</b> You <i>can</i> write to the original chip but requires a totally different method and requires a pre-flashed arduino that you must <b><a href="https://buy.stripe.com/5kA174gPr9VYgPScMO">purchase from BwE</a></b>. 
 <br>The new method has its own unique exploit that reads/writes SCE chips on-board. If you want to do this, then this guide is not for you.
-<br>This new method requires only 2 wires (initially to glitch) to the syscon then 3 (to alternative points). Read and write the original chip on the board. No desoldering!
+<br>The benefit of this new method is that it requires only 2 wires (initially to glitch) to the syscon then 3 to alternative points. Read and write the original chip on the board. No desoldering!
 <br>The target market for this are repairers who will constantly be downgrading or fixing LoadBIOS errors. This will then remove the need to constantly desolder/resolder and buy chips.
 <br>
 
