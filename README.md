@@ -196,6 +196,8 @@
   <li>Enable Debug Mode</li>
 </ol>
 
+<img src="https://i.imgur.com/s8X8hKA.png" width="45%" height="45%">
+
 <h3>Programming Blank Syscon:</h3>
 
 <ol>
@@ -391,6 +393,8 @@
   <li>Patch and Swap CoreOS</li>
   <li>Enable UART Mode</li>
 </ol>
+
+<img src="https://i.imgur.com/OKeE5Mm.png" width="65%" height="65%">
 
 <h3>Credits/Greetz:</h3>
 DARKNESMONK
