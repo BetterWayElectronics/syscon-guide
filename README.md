@@ -3,7 +3,7 @@
 <br><b>Why Tho?</b> You can downgrade (via CoreOS swapping) and repair LoadBIOS type corruptions. You can also enable service mode!
 <br><b>Where's the rest of the guide?</b> It is TBA, but my software handles most of the downgrade process anyways.
 <br><br>
-<b>Note:</b> You <i>can</i> write to the original chip but requires a totally different method and requires a pre-flashed arduino that you must <b><a href="https://buy.stripe.com/7sIeXU0Qt1ps2Z24gj">purchase from BwE</a></b>. 
+<b>Note:</b> You <i>can</i> write to the original chip but requires a totally different method and requires a pre-flashed arduino that you must <b><a href="https://betterwayelectronics.com.au/bweps4sysconwriter">purchase from BwE</a></b>. 
 <br>The new method has its own unique exploit that reads/writes SCE chips on-board. If you want to do this, then this guide is not for you.
 <br>The benefit of this new method is that it requires only 2 wires (initially to glitch) to the syscon then 3 to alternative points. Read and write the original chip on the board. No desoldering!
 <br>The target market for this are repairers who will constantly be downgrading or fixing LoadBIOS errors. This will then remove the need to constantly desolder/resolder and buy chips.
