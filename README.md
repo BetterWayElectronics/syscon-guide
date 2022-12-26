@@ -193,7 +193,6 @@
   <li>Run BwE PS4 NOR Validator</li>
   <li>Select Syscon</li>
   <li>Scan & Apply Downgrade/Service Mode Patches</li>
-  <li>Enable Debug Mode</li>
 </ol>
 
 <img src="https://i.imgur.com/s8X8hKA.png" width="45%" height="45%">
@@ -390,11 +389,11 @@
 <ol>
   <li>Run BwE PS4 NOR Validator</li>
   <li>Select NOR</li>
-  <li>Patch and Swap CoreOS</li>
+  <li>Patch CoreOS (and or Southbridge)</li>
   <li>Enable UART Mode</li>
 </ol>
 
-<img src="https://i.imgur.com/OKeE5Mm.png" width="65%" height="65%">
+<img src="https://i.imgur.com/d7ANNtH.png" width="65%" height="65%">
 
 <h3>Credits/Greetz:</h3>
 DARKNESMONK
