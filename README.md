@@ -86,7 +86,7 @@
   </div>
 </div>
 <br>
-<h3>Reading Syscon (Currently does NOT work on SIE INC Chips):</h3>
+<h3>Reading Syscon (Currently ONLY works on A0#-COL/2 chips):</h3>
 
 <ol>
   <li>Program Arduino with .hex File</li>
