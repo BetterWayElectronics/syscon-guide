@@ -86,15 +86,9 @@
   </div>
 </div>
 <br>
-<h3>Reading Syscon (Currently ONLY works on A0#-COL/2 chips):</h3>
 
-<ol>
-  <li>Program Arduino with .hex File</li>
-  <li>Connect from your Arduino to the Syscon Chip (On or Off Board)
-  <li>Launch SysconReader.exe in Terminal with your COM port (Eg: SysconReader.exe COM4)
-  </li>
-  <br>If the dumps do not match change resistors (100ohm, 510ohm 1kohm).
-  <br><br>
+<h3>Wiring To Syscon & Removing/Replacing</h3>
+Pinout:<br>
 <table>
   <tr>
     <th>5v</th>
@@ -137,8 +131,6 @@
 <img src="https://i.imgur.com/66tC1WL.jpeg" width="45%" height="45%">
 <br><b>Dumping off-board example</b>
 <br>
-
-<h3>Wiring To Syscon & Removing/Replacing</h3>
 
 <img src="https://i.imgur.com/E6sxlx4.jpeg" width="45%" height="45%">
 <br><br>
@@ -186,6 +178,16 @@
   </div>
 </div>
 
+<h3>Reading Syscon (Currently ONLY works on A0#-COL/2 chips):</h3>
+<img src="https://i.imgur.com/zV8EvTU.png" width="55%" height="55%">
+
+  <li>Connect from your Arduino to the Syscon Chip (See Wiring To Syscon Below)
+  <li>Launch BwE_PS4_Syscon_Reader.exe in Terminal with your COM port (Eg: BwE_PS4_Syscon_Reader.exe COM4)
+  <li>It will glitch the chip (if this is your first read and you have not enabled OCD mode) and then dump!
+  <li>It will then re-dump and compare in order to validate them.
+  </li>
+  <br>If the dumps do not match change resistors (100ohm, 510ohm, 1kohm).
+  <br>If it does not even dump check your connections (seriously) or change your Octocoupler.
 
 <h3>Patching Syscon Dump:</h3>
 
