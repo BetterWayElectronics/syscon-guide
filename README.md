@@ -190,9 +190,16 @@
 <h3>Patching Syscon Dump:</h3>
 
 <ol>
-  <li>Run BwE PS4 NOR Validator</li>
-  <li>Select Syscon</li>
-  <li>Scan & Apply Downgrade/Service Mode Patches</li>
+  <li>Run BwE PS4 NOR Validator
+  <li>Select Option 2 - Scan & Patch PS4 Syscon
+  <li>Optional: Select Verbose Mode (Only required for Manual Patching)
+  <li>Syscon will scan for a patchable slot, if there is one available it will say at the bottom in "Final Results".
+  <li>If it says "Active Slot Patchable" select Option 1 "Auto Patch"
+  <li>If it says "Unable to Auto-Patch" it will prompt you to Manually Patch - If so you must select an earlier 080B (Use Verbose Mode) to overwrite the last 080B.
+  <li>If it says "Syscon NOT Patchable" then call it quits, game over. Your PS4 has either had its initialisation overwritten or some other historical event is blocking the patch.
+  <li>Apply the patch!
+  <li>It will show you what you are overwriting (and potentially the data you are overwriting it with).
+  <li>File will be saved as "???_080B_patched.bin" - Keep this and the original, label it appropriately and store it!
 </ol>
 
 <img src="https://i.imgur.com/s8X8hKA.png" width="45%" height="45%">
@@ -388,12 +395,28 @@
 
 <ol>
   <li>Run BwE PS4 NOR Validator</li>
-  <li>Select NOR</li>
-  <li>Patch CoreOS (and or Southbridge)</li>
-  <li>Enable UART Mode</li>
+  <li>Select Option 1 "Validate or Patch PS4 NOR"1</li>
+  <li>Select your NOR file</li>
+  <li>Select Option 9 "Validate" and patch for UART when prompted</li>
+  <li>If your NOR is valid go back and select Option 4 "Patch CoreOS & Southbridge (LoadBios & Downgrading)"</li>
+  <li>Read the warnings!</li>
+  <li>Select Option 1 "Patch SB Flag & CoreOS Header"</li>
+  <li>Select CoreOS Header Patch - There are multiple choices as each console may behave differently with each patch, just go with the first.
+  <li>NOR will be saved as "?_sb-coreos-patched.bin"</li>
+  <li><b>Do NOT boot the console with patched NOR until you have ALSO patched the Syscon.</b>
+
 </ol>
 
 <img src="https://i.imgur.com/d7ANNtH.png" width="65%" height="65%">
+
+<h3>Final Step - LoadBios Repair / Downgrade:</h3>
+
+With the Syscon patched and the NOR patched, upload them both at the same time to the console. If you have the Syscon on board you need to have standby power active.<br>
+The console will either boot to Safe Mode and ask you to install a lower firmware OR it won't and you will have an error in your UART log<br>
+If it fails to boot go and re-patch your NOR with a different CoreOS header then using the <b>same</b> syscon patch file - upload both again and reboot.<br>
+If you have the UART errors BlStorageHeader or checkUpdVersion, you did not follow my instructions and have corrupted your Syscon - I will have to manually repair it for you for a fee.<br>
+If you still have loadBios -8 error and the bootloader version has changed then you have an issue with your RAM, replace/repair it.<br><br>
+And thats that! Easy right?
 
 <h3>Credits/Greetz:</h3>
 DARKNESMONK
