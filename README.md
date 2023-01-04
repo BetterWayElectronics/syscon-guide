@@ -40,6 +40,10 @@
   <li><a href="https://www.aliexpress.com/item/1005001900973775.html">Atten ST0862D Hot Air Station ($257AUD) (You Can Avoid This With ChipQuik)</a></li>
   <li><a href="https://www.aliexpress.com/item/4000123318936.html">SMD Vacuum Pen ($1AUD)</a></li>
 </li>
+<h3>Compatibilitiy</h3>
+<img src="https://i.imgur.com/4fpFJvI.jpg" width="50%" height="50%"><br>
+Do you have the Syscon on the right? You're outta luck. The glitch only works on Renesas RL78 chips. The guide ends here.<br>
+The chip MUST have A0#-COL or A0#-COL2 where the # is a number, obviously.
 
 <h3>Syscon Types & Pinout</h3>
 <li>With this method that's provided you need to replace Sony's Syscon chip with a new one.
